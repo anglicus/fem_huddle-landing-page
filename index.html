@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Huddle landing page with curved sections</title>
+
+</head>
+<body>
+  <header>
+    <img class="logo" src="/images/logo.svg" alt="Huddle logo">
+    <button id="header-cta-try">Try it Free</button>
+
+    <h1>Build The Community Your Fans Will Love</h1>
+
+    <p>Huddle re-imagines the way we build communities. You have a voice, but so does 
+    your audience. Create connections with your users as you engage in genuine discussion.</p>
+    <button class="cta-get-started">Get Started For Free</button>
+  </header>
+
+  </main>
+      <section id="stats-section">
+          <img id="svg-screen-mockups" src="/images/screen-mockups.svg" alt="illustration screen mockup">
+          <div id="stats-div">
+            <div class="stat-box">
+              <img id="icon-communities" src="/images/icon-communities.svg" alt="communities icon">
+              <p id="communities-stat">1.4k+</p>
+              <p id="communities-label">Communities Formed</p>
+            </div>
+
+            <div class="stat-box">
+              <img id="icon-messages" src="/images/icon-messages.svg" alt="messages icon">
+              <p id="messages-stat">2.7m+</p>
+              <p id="messages-label">Messages Sent</p>
+            </div>
+          </div>
+      </section>
+
+      <div id="subsection1-bg-top"></div>
+      <section class="subsection" id="subsection1">
+        <img class="section-illustration" src="/images/illustration-grow-together.svg" alt="illustration grow together">
+        <div>
+          <h2>Grow Together</h2>
+          <p>Generate meaningful discussions with your audience and build a strong, loyal community. 
+          Think of the insightful conversations you miss out on with a feedback form.</p>
+        </div>
+      </section>
+      <div id="subsection1-bg-bottom"></div>
+
+      <section class="subsection" id="subsection2">    
+          <img class="section-illustration" src="/images/illustration-flowing-conversation.svg" alt="illustration flowing conversations">
+        <div>
+          <h2>Flowing Conversations</h2>
+          <p>You wouldn't paginate a conversation in real life, so why do it online? Our threads have 
+          just-in-time loading for a more natural flow.</p>
+        </div>
+      </section>
+
+      <div id="subsection3-bg-top"></div>
+      <section class="subsection" id="subsection3">
+          <img class="section-illustration" src="/images/illustration-your-users.svg" alt="illustration your users">
+          <div>
+            <h2>Your Users</h2>
+            <p>It takes no time at all to integrate Huddle with your app's authentication solution. This means, 
+            once signed in to your app, your users can start chatting immediately.</p>
+          </div>
+        
+      </section>
+      <div id="subsection3-bg-bottom"></div>
+
+      <section>
+        <h1>Ready To Build Your Community?</h1>
+        <button class="cta-get-started">Get Started For Free</button>
+      </section>
+  </main>
+  <footer>
+    <div class="bg-top"></div>
+    <div class="bg-middle">
+      <div id="footer-contact">
+        <img class="logo" src="/images/logo.svg" alt="Huddle logo">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris nulla quam, hendrerit lacinia 
+        vestibulum a, ultrices quis sem.</p>
+        <table>
+          <tr>
+            <td><img class="contact-icon" src="/images/icon-phone.svg" alt="phone icon"></td>
+            <td><span class="contact-span">Phone: +1-543-123-4567</span></td>
+          </tr>
+          <tr>
+            <td><img class="contact-icon" src="/images/icon-email.svg" alt="email icon"></td>
+            <td><span class="contact-span">example@company.com</span></td>
+          </tr>
+        </table>
+        <div id="social-icons-div">
+        <img class="social-icon" id="facebook-icon" src="/images/facebook-icon.svg" alt="facebook icon">
+        <img class="social-icon" id="instagram-icon" src="/images/instagram-icon.svg" alt="instagram icon">
+        <img class="social-icon" id="twitter-icon" src="/images/twitter-icon.svg" alt="twitter icon">
+        </div>  
+      </div>
+      <div id="footer-newsletter">
+        <h2>Newsletter</h2>
+        <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never 
+        send you spam or pass on your email address</p>
+        <form id="subscribe-form">
+          <input type="email" id="input-email" type="email" name="email" title="email" />
+          <span id="email-error-msg" class="hidden">Check your email please</span>
+          <button id="btn-subscribe">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  </footer>
+      <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+      Coded by <a href="https://www.frontendmentor.io/profile/anglicus">James English</a>.
+    </p>
+</body>
+
+<script>
+  const emailInput = document.getElementById('input-email');
+  const emailErrorMsg = document.getElementById('email-error-msg');
+
+  emailInput.addEventListener('invalid', e => {
+    e.preventDefault();
+    emailErrorMsg.classList.remove('hidden');
+  });
+</script>
+
+</html>
